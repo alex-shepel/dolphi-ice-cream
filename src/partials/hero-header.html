@@ -1,3 +1,53 @@
-<header>
-  <h1>Hero Header</h1>
+<!-- Моб. версия -->
+<header class="header">
+  <div class="container container-header">
+    <picture class="header__logo">
+      <source srcset="./sass/components/hero-header/images/logo.png 1x, ./sass/components/hero-header/images/logo@2x.png 2x"/>
+      <img class="header__icon" srcset="./sass/components/hero-header/images/logo.png" alt="логотип"
+      src="./sass/components/hero-header/images/logo.png" width="199" height="50"/>
+    </picture>
+    <button class="btn-modal" type="button">
+      <svg class="btn-modal__icon-burger">
+        <use href="#"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="header-m">
+    <button class="header-m__close" type="button">
+      <svg class="header-m__close-icn">
+        <use href="#"></use>
+      </svg>
+    </button>
+    <button class="header-m__buy" type="button"> 
+      <span class="header-m__buy-text"> Buy now </span> 
+      <svg class="header-m__buy-icn">
+        <use href="#"></use>
+      </svg>
+    </button>
+    <ul class="header-m__list">
+      <li class="header-m__item"><a href="#">Home</a></li>
+      <li class="header-m__item"><a href="#">About us</a></li>
+      <li class="header-m__item"><a href="#">How it’s made?</a></li>
+      <li class="header-m__item"><a href="#">Our products</a></li>
+      <li class="header-m__item"><a href="#">Contact</a></li>
+    </ul>
+  </div>
 </header>
+<hero class="hero">
+  <div class="container container-hero">
+    <h1 class="hero__title"> ice cream made with <span class="hero__title-accent">passion</span></h1>
+    <div class="hero-bg-circle">
+      <picture class="hero__ice-cream-pic">
+        <source srcset="./sass/components/hero-header/images/ice-cream_desktop.png 1x, ./sass/components/hero-header/images/ice-cream_desktop@2x.png 2x" media="(min-width=1280px)"/> 
+        <source srcset="./sass/components/hero-header/images/ice-cream_tablet.png 1x, ./sass/components/hero-header/images/ice-cream_tablet@2x.png 2x" media="(min-width=768px)"/> 
+        <source srcset="./sass/components/hero-header/images/ice-cream_phone.png 1x, ./sass/components/hero-header/images/ice-cream_phone@2x.png 2x" media="(min-width=480px)"/> 
+        <img class="hero__ice-cream-img" srcset="./sass/components/hero-header/images/ice-cream_phone.png" alt="эскимо"
+        src="./sass/components/hero-header/images/ice-cream_phone.png" width="171"/>
+      </picture>
+    </div>
+    <div class="hero__btn-groop">
+      <button class="btn btn__prod" type="button">Products</button>
+      <button class="btn-secondary btn__prod" type="button">How it’s made?</button>
+    </div>
+  </div>
+</hero>
