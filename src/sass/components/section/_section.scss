@@ -1,0 +1,21 @@
+.section {
+  &-label {
+    font-family: 'Titan One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+  }
+
+  &-title {
+    font-family: 'Titan One', cursive;
+    font-size: 58px;
+    line-height: 1.138;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--title-color);
+  }
+}
