@@ -18,27 +18,17 @@
   display: flex;
   justify-content: end;
   margin-bottom: 46px;
-  // @media screen and (min-width: 768px) {
-  // }
+  gap: 28px;
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+  }
   @media screen and (min-width: 1280px) {
+    gap: 35px;
     margin-bottom: 50px;
   }
 }
-.socials-list__item {
-  &:not(:last-child) {
-    margin-right: 28px;
-  }
-  @media screen and (min-width: 768px) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    &:not(:last-child) {
-      margin-right: 25px;
-    }
-  }
-}
+// .socials-list__item {
+// }
 .socials-list__link {
   display: flex;
   align-items: center;
