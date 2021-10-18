@@ -1,0 +1,88 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  padding: 10px 25px;
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: var(--title-color);
+  color: var(--white-color);
+}
+.btn--secondary {
+  background-color: var(--white-color);
+  color: var(--title-color);
+}
+
+.vusually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 460px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1048px;
+  }
+}
+
+:root {
+  --accent-color: #ffb8ca;
+  --title-color: #d41443;
+  --white-color: #ffffff;
+}/*# sourceMappingURL=main.css.map */
