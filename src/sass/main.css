@@ -145,8 +145,16 @@ img {
 }
 
 .about {
-  background: #fff5f6;
+  background-color: #fff5f6;
   text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: url(../images/about/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
 }
 .about.section {
   padding-top: 125px;
@@ -166,6 +174,11 @@ img {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1179px) {
+  .about__main-block {
+    justify-content: space-between;
+  }
+}
 .about__image {
   display: inline-block;
 }
@@ -182,8 +195,7 @@ img {
 .about__description-block {
   display: flex;
   flex-direction: column;
-  gap: 45px;
-  margin-bottom: 25px;
+  gap: 35px;
 }
 @media screen and (max-width: 767px) {
   .about__description-block {
@@ -196,7 +208,18 @@ img {
     gap: 15px;
     margin: 0;
     padding: 0;
-    align-self: flex-end;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about__description-block {
+    position: relative;
+    bottom: -50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__description-block {
+    align-self: center;
+    width: calc(50% - 60px);
   }
 }
 .about__description {
@@ -205,9 +228,6 @@ img {
   line-height: 162%;
   color: #000000;
   letter-spacing: 0.02em;
-}
-.about__description:not(:first-child) {
-  color: var(--secondary-text-color);
 }
 @media screen and (max-width: 767px) {
   .about__description {
@@ -218,6 +238,22 @@ img {
   .about__description {
     font-size: 14px;
     line-height: 176%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__description {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+  }
+}
+.about__description:not(:first-child) {
+  color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1280px) {
+  .about__description:not(:first-child) {
+    font-size: 14px;
+    line-height: 194%;
   }
 }
 .about__btn {
@@ -231,7 +267,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .about__btn {
-    margin-left: 190px;
+    width: fit-content;
+    margin-top: 40px;
   }
 }
 .about__icon {
