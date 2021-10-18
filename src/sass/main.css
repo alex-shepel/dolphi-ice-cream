@@ -85,4 +85,32 @@ img {
   --accent-color: #ffb8ca;
   --title-color: #d41443;
   --white-color: #ffffff;
+}
+
+.about {
+  background: #fff5f6;
+  text-align: center;
+}
+.about__before-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.about__title {
+  margin-bottom: 25px;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.about__image {
+  margin-bottom: 45px;
+}
+.about__description {
+  margin-bottom: 45px;
+}
+.about__btn {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
