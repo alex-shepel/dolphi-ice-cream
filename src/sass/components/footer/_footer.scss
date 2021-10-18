@@ -50,7 +50,7 @@
   transition: background-color var(--anim-props);
   &:hover,
   &:focus {
-    background-color: var(--title-colot);
+    background-color: var(--title-color);
   }
   @media screen and (min-width: 768px) {
     width: 34px;
@@ -77,7 +77,7 @@
   }
 }
 .footer-address__link {
-  color: var(--title-colot);
+  color: var(--title-color);
 }
 
 .footer__text {
