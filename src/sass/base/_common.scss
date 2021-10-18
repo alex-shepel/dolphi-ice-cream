@@ -32,7 +32,22 @@ img {
 }
 
 .btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  padding: 10px 25px;
+  border-style: none;
+  border-radius: 50px;
   cursor: pointer;
+  &--primary {
+    background-color: var(--title-color);
+    color: var(--white-color);
+  }
+
+  &--secondary {
+    background-color: var(--white-color);
+    color: var(--title-color);
+  }
 }
 
 .vusually-hidden {
