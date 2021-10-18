@@ -1,36 +1,47 @@
 <!-- Моб. версия -->
 <header class="header">
   <div class="container container-header">
-    <picture class="header__logo">
-      <source srcset="./sass/components/hero-header/images/logo.png 1x, ./sass/components/hero-header/images/logo@2x.png 2x"/>
-      <img class="header__icon" srcset="./sass/components/hero-header/images/logo.png" alt="логотип"
-      src="./sass/components/hero-header/images/logo.png" width="199" height="50"/>
-    </picture>
-    <button class="btn-modal" type="button">
-      <svg class="btn-modal__icon-burger">
-        <use href="#"></use>
+    <a href="../src/index.html">
+      <picture class="header__logo">
+        <source srcset="./sass/components/hero-header/images/logo.png 1x, ./sass/components/hero-header/images/logo@2x.png 2x"/>
+        <img class="header__icon" srcset="./sass/components/hero-header/images/logo.png" alt="логотип"
+        src="./sass/components/hero-header/images/logo.png" width="199px" height="50px"/>
+      </picture>
+    </a>
+    <button class="btn menu-toggle js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu" 
+    type="button">
+      <svg class="btn-modal__icon-burger" width="20px" height="12px">
+        <use href="../src/images/sprite.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
-  <div class="header-m">
-    <button class="header-m__close" type="button">
-      <svg class="header-m__close-icn">
-        <use href="#"></use>
-      </svg>
-    </button>
-    <button class="header-m__buy" type="button"> 
-      <span class="header-m__buy-text"> Buy now </span> 
-      <svg class="header-m__buy-icn">
-        <use href="#"></use>
-      </svg>
-    </button>
-    <ul class="header-m__list">
-      <li class="header-m__item"><a href="#">Home</a></li>
-      <li class="header-m__item"><a href="#">About us</a></li>
-      <li class="header-m__item"><a href="#">How it’s made?</a></li>
-      <li class="header-m__item"><a href="#">Our products</a></li>
-      <li class="header-m__item"><a href="#">Contact</a></li>
-    </ul>
+  <!-- Мобильное меню -->
+  <div data-modal class="backdrop is-hidden">
+    <div class="header-m js-menu-container" id="mobile-menu">
+      <button class="btn menu-toggle js-close-menu" type="button">
+        <svg class="menu-btn__icon-close"
+          width="14px"
+          height="14px"
+          aria-label="Переключатель меню">
+          <use class="menu-btn__icon-c" href="../src/images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="btn header-m__buy" type="button"> 
+        <span class="header-m__buy-text"> Buy now </span> 
+        <svg class="header-m__buy-icn" width="5.26px" height="8px">
+          <use href="../src/images/sprite.svg#icon-modal_btn"></use>
+        </svg>
+      </button>
+      <ul class="header-m__list list">
+        <li class="header-m__item"><a href="#">Home</a></li>
+        <li class="header-m__item"><a href="#">About us</a></li>
+        <li class="header-m__item"><a href="#">How it’s made?</a></li>
+        <li class="header-m__item"><a href="#">Our products</a></li>
+        <li class="header-m__item"><a href="#">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </header>
 <hero class="hero">
@@ -47,7 +58,7 @@
     </div>
     <div class="hero__btn-groop">
       <button class="btn btn__prod" type="button">Products</button>
-      <button class="btn-secondary btn__prod" type="button">How it’s made?</button>
+      <button class=" btn btn-secondary btn__prod" type="button">How it’s made?</button>
     </div>
   </div>
 </hero>
