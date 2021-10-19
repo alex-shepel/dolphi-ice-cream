@@ -1,4 +1,16 @@
 .products {
+  $scrollbar-track-color-pink: #fa99b1;
+  $scrollbar-bg-color-pink: #f153a2;
+  $scrollbar-color-pink: #e01f7f;
+
+  $scrollbar-track-color-orange: #ebc38c;
+  $scrollbar-bg-color-orange: #f0b25b;
+  $scrollbar-bg-hover-color-orange: #df9124;
+
+  $scrollbar-track-color-green: #9fce62;
+  $scrollbar-bg-color-green: #85b941;
+  $scrollbar-bg-hover-color-green: #558a11;
+
   text-align: center;
   padding-top: 121px;
   padding-bottom: 98px;
@@ -205,16 +217,16 @@
     width: 3px;
   }
   &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #fa99b1;
+    box-shadow: inset 0 0 5px $scrollbar-track-color-pink;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #f153a2;
+    background: $scrollbar-bg-color-pink;
     border-radius: 10px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: #e01f7f;
+    background: $scrollbar-color-pink;
   }
 }
 .scrollbar--orange {
@@ -222,16 +234,16 @@
     width: 3px;
   }
   &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #ebc38c;
+    box-shadow: inset 0 0 5px $scrollbar-track-color-orange;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #f0b25b;
+    background: $scrollbar-bg-color-orange;
     border-radius: 10px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: #df9124;
+    background: $scrollbar-bg-hover-color-orange;
   }
 }
 .scrollbar--green {
@@ -239,15 +251,15 @@
     width: 3px;
   }
   &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #9fce62;
+    box-shadow: inset 0 0 5px $scrollbar-track-color-green;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #85b941;
+    background: $scrollbar-bg-color-green;
     border-radius: 10px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: #558a11;
+    background: $scrollbar-bg-hover-color-green;
   }
 }
