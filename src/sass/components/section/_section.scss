@@ -54,6 +54,7 @@
     background-image: url(../images/contacts/bg.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
+    background-size: contain;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
       screen and (min-resolution: 192dpi) and (min-width: 1280px),
