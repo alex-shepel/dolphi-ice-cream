@@ -99,6 +99,7 @@ img {
   --bg-pale-color: #fff5f6;
   --bg-green-color: #c2e297;
   --bg-flesh-color: #f0d1a5;
+  --btn-hover-color: #ecebeb;
   --anim-props: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -148,9 +149,33 @@ img {
   background-color: #fff5f6;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .about {
+    background-image: url(../images/about/bg-mob.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 87%;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about {
+    background-image: url(../images/about/bg-mob@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 87%;
+  }
+}
 @media screen and (min-width: 1280px) {
   .about {
     background-image: url(../images/about/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about {
+    background-image: url(../images/about/bg@2x.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -226,7 +251,7 @@ img {
   text-align: left;
   font-size: 12px;
   line-height: 162%;
-  color: #000000;
+  color: var(--primary-text-color);
   letter-spacing: 0.02em;
 }
 @media screen and (max-width: 767px) {
@@ -263,7 +288,7 @@ img {
   transition: background-color var(--anim-props);
 }
 .about__btn:hover, .about__btn:focus {
-  background-color: #ecebeb;
+  background-color: var(--btn-hover-color);
 }
 @media screen and (min-width: 768px) {
   .about__btn {

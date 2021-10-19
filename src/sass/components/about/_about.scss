@@ -2,8 +2,33 @@
   background-color: #fff5f6;
   text-align: center;
 
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/bg-mob.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 87%;
+  }
+
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/about/bg-mob@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 87%;
+  }
+
   @media screen and (min-width: 1280px) {
     background-image: url(../images/about/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
+
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/about/bg@2x.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -75,7 +100,7 @@
     text-align: left;
     font-size: 12px;
     line-height: 162%;
-    color: #000000;
+    color: var(--primary-text-color);
     letter-spacing: 0.02em;
 
     @media screen and (max-width: 767px) {
@@ -107,7 +132,7 @@
     transition: background-color var(--anim-props);
     &:hover,
     &:focus {
-      background-color: #ecebeb;
+      background-color: var(--btn-hover-color);
     }
     @media screen and (min-width: 768px) {
       width: fit-content;
