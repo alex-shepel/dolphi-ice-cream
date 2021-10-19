@@ -12,8 +12,8 @@
     <symbol id="icon-house" viewBox="0 0 35 32">
       <path fill="#d31342" style="fill:var(--color4, #d31342)" d="M34.253 15.613a1.576 1.576 0 0 0-.129-2.255L19.352.432c-.671-.586-1.745-.574-2.402.028L2.128 14.047a1.567 1.567 0 0 0-.071 2.252l.372.387c.617.642 1.613.718 2.224.17l1.108-.992v14.523c0 .891.722 1.613 1.612 1.613h5.778c.89 0 1.612-.721 1.612-1.613v-10.16h7.37v10.16c-.013.89.624 1.612 1.515 1.612h6.123c.89 0 1.613-.722 1.613-1.613V16.068l.683.6c.377.332 1.168.066 1.767-.594l.42-.462z"/>
     </symbol>
-    <symbol id="icon-modal_btn" viewBox="0 0 26 32">
-      <path fill="none" stroke="#d41443" style="stroke:var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M3.542 3.2 20.368 16 3.542 28.8"/>
+    <symbol id="icon-modal_btn" viewBox="0 0 7 10">
+      <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1.038 1 4.679 4-4.68 4"/>
     </symbol>
     <symbol id="icon-facebook" viewBox="0 0 32 32">
 			<path d="M16.47 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.836 0-16 7.163-16 16s7.164 16 16 16Z"/>
