@@ -50,12 +50,12 @@
   @media screen and (min-width: 768px) {
     padding-top: 152px;
     padding-bottom: 40px;
-    flex-basis: calc((100% -20 px * 2) / 3);
+    flex-basis: calc((100% - 20px * 2) / 3);
   }
   @media screen and (min-width: 1280px) {
     padding-top: 163px;
     padding-bottom: 50px;
-    flex-basis: calc((100% -20 px * 2) / 3);
+    flex-basis: calc((100% - 20px * 2) / 3);
   }
   &::before {
     content: '';
