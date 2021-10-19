@@ -11,6 +11,9 @@
     padding-bottom: 119px;
   }
 }
+.products__label {
+  margin-bottom: 15px;
+}
 .products__title {
   margin-bottom: 144px;
   @media screen and (min-width: 768px) {
@@ -32,7 +35,6 @@
 .product-list__item {
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid red;
   position: relative;
   display: block;
   border-radius: 24px;
@@ -57,7 +59,6 @@
   }
   &::before {
     content: '';
-    outline: 1px solid violet;
     position: absolute;
     top: -113px;
     left: 50%;
