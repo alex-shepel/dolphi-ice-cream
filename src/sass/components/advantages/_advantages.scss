@@ -1,0 +1,102 @@
+.advantages__section {
+  padding-top: 39px;
+  padding-bottom: 97px;
+  background-color: var(--bg-pale-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 66px;
+    padding-bottom: 140px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 39px;
+    padding-bottom: 139px;
+  }
+}
+
+.advantages__title {
+  margin-top: 16px;
+  margin-bottom: 13px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+}
+
+.advantages__text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
+.advantages__list {
+  margin-bottom: -38px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -60px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: -30px;
+    margin-bottom: 0px;
+  }
+}
+
+.advantages__item {
+  width: 230px;
+  margin-bottom: 38px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 60px);
+    margin-right: 60px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc(100% / 3 - 30px);
+    margin-right: 30px;
+  }
+}
+
+.advantages__item-one::before {
+  content: '';
+  display: block;
+  background-image: url(../images/advantages/advantages-icon1@1x.png);
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 33px;
+}
+
+.advantages__item-two::before {
+  content: '';
+  display: block;
+  background-image: url(../images/advantages/advantages-icon2@1x.png);
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.advantages__item-three::before {
+  content: '';
+  display: block;
+  background-image: url(../images/advantages/advantages-icon3@1x.png);
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 44px;
+}
