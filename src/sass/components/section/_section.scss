@@ -4,6 +4,7 @@
     font-size: 18px;
     line-height: 1.167;
     letter-spacing: 0.04em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--accent-color);
 
@@ -12,7 +13,7 @@
       line-height: 1.154;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 30px;
       line-height: 1.133;
     }
@@ -23,6 +24,7 @@
     font-size: 34px;
     line-height: 1.147;
     letter-spacing: 0.04em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--title-color);
 
@@ -31,10 +33,31 @@
       line-height: 1.146;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 58px;
       line-height: 1.138;
       letter-spacing: 0.06em;
     }
+  }
+}
+
+.section-contacts {
+  padding-bottom: 56px;
+  background-color: var(--bg-pink-color);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 79px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 82px;
+    background-image: url(../images/contacts/bg.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url(../images/contacts/bg@2x.png);
+    background-repeat: no-repeat;
   }
 }
