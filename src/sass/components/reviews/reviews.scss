@@ -1,0 +1,113 @@
+.review-list {
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 43px 60px 26px;
+    font-size: 12px;
+    line-height: 2.583;
+    background-color: var(--bg-slider);
+
+    @media screen and (min-width: 768px) {
+      padding: 30px 38px 28px;
+      font-size: 14px;
+      line-height: 2.143;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 32px 52px;
+      font-size: 16px;
+      line-height: 1.875;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 28px;
+      width: 54px;
+      height: 40px;
+      background-image: url(../images/review/quotes.svg);
+    }
+  }
+
+  &__dot {
+    position: relative;
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin-bottom: 15px;
+    background-color: var(--btn-primary-hover-color);
+    border-radius: 50%;
+
+    &::before,
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: var(--btn-primary-hover-color);
+      border-radius: 50%;
+    }
+
+    &::before {
+      position: absolute;
+      left: -10px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 10px;
+    }
+  }
+
+  &__person {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.857;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 1.875;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+      line-height: 1.85;
+    }
+  }
+}
+
+.review-slider {
+  width: 280px;
+  height: 600px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    height: 382px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    height: 350px;
+  }
+}
