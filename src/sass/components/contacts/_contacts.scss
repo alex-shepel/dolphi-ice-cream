@@ -132,7 +132,7 @@
   margin: 0 auto;
 
   @media screen and (max-width: 767px) {
-    width: 162px;
+    width: 200px;
   }
 
   @media screen and (min-width: 768px) {
@@ -154,7 +154,21 @@
   }
 
   &__btn {
+    display: block;
     width: 100%;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    min-height: 44px;
+
+    font-size: 16px;
+    line-height: 1.313;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      transform: scale3d(1.05, 1.1, 1.1);
+    }
   }
 
   &__icon {
