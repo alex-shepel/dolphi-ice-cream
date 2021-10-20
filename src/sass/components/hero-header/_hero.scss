@@ -1,0 +1,311 @@
+.hero {
+  background-color: var(--accent-color);
+  overflow: hidden;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 56px;
+    padding-bottom: 156px;
+    @media screen and (min-width: 768px) {
+      position: relative;
+      padding-top: 85px;
+      padding-bottom: 31px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 40px;
+    }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title-btn {
+    position: relative;
+    z-index: 10;
+    padding-top: 138px;
+    @media screen and (min-width: 768px) {
+      padding-top: 15px;
+      padding-bottom: 12px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 85px;
+      padding-bottom: 50px;
+    }
+  }
+  &__title {
+    font-family: 'Titan One', cursive;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: calc(26 / 22);
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 38px;
+      line-height: calc(44 / 38);
+      margin-bottom: 25px;
+    }
+  }
+  &__title-accent {
+    font-size: 48px;
+    line-height: 1;
+    color: var(--title-color);
+    z-index: 3;
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 1;
+    }
+  }
+  &__btn-group {
+    display: flex;
+    z-index: 3;
+    gap: 8px;
+    @media screen and (min-width: 1280px) {
+      gap: 15px;
+    }
+  }
+  &__left-button {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 30px;
+    }
+  }
+  &__left-button-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 47px;
+    padding-bottom: 6px;
+    gap: 7px;
+    @media screen and (min-width: 1280px) {
+      padding-top: 56px;
+      padding-bottom: 11px;
+      gap: 20px;
+    }
+  }
+  &__right-list {
+    display: none;
+    padding: 0;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      position: relative;
+      z-index: 20;
+      flex-direction: column;
+      align-items: center;
+      gap: 13px;
+      padding-top: 6px;
+      @media screen and (min-width: 1280px) {
+        gap: 15px;
+        padding-top: 75px;
+      }
+    }
+  }
+  &__right-item {
+    position: relative;
+    width: 58px;
+    height: 45px;
+    @media screen and (min-width: 1280px) {
+      width: 99px;
+      height: 77px;
+    }
+  }
+  &__right-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__right-number {
+    position: absolute;
+    top: 1px;
+    right: 8px;
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: calc(32 / 28);
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--title-color);
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: calc(53 / 46);
+      top: 4px;
+      right: 18px;
+    }
+  }
+  &__right-text {
+    position: absolute;
+    top: 33px;
+    right: 8px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    color: var(--white-color);
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      top: 58px;
+      right: 18px;
+    }
+  }
+  &__bg-circle {
+    position: absolute;
+    right: 0px;
+    top: 83px;
+    z-index: 1;
+    @media screen and (min-width: 768px) {
+      right: 125px;
+      top: 31px;
+    }
+    @media screen and (min-width: 1280px) {
+      right: 130px;
+      top: 52px;
+    }
+  }
+  &__ice-cream-pic {
+    position: absolute;
+    right: 32px;
+    top: 92px;
+    z-index: 6;
+    @media screen and (min-width: 768px) {
+      right: 235px;
+      top: 64px;
+    }
+    @media screen and (min-width: 1280px) {
+      right: 335px;
+      top: 108px;
+    }
+  }
+}
+.hero__btn {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: calc (10 / 8);
+  padding: 7px 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    padding: 11px 20px;
+  }
+  &--prod {
+    background-color: var(--title-color);
+    color: var(--white-color);
+  }
+  &--prod:hover,
+  &--prod:focus {
+    background-color: #c7133e;
+  }
+  &--how {
+    background-color: var(--white-color);
+    color: var(--title-color);
+  }
+  &--how:hover,
+  &--how:focus {
+    background-color: #ecebeb;
+  }
+}
+
+// tablet
+.hero-textmilk {
+  max-width: 122px;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: calc(12 / 8);
+  color: var(--white-color);
+  @media screen and (min-width: 1280px) {
+    max-width: 200px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+}
+.hero-btn-milk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+.hero-milk-icn {
+  fill: var(--title-color);
+}
+
+.hero__tasty-pic {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 34px;
+    top: 267px;
+    z-index: 7;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 20px;
+    top: 433px;
+  }
+}
+// desktop
+.nav {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: relative;
+    z-index: 15;
+  }
+  &__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+  }
+  &__link {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+    color: var(--white-color);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--title-color);
+  }
+  &__link.active {
+    color: var(--title-color);
+  }
+}
