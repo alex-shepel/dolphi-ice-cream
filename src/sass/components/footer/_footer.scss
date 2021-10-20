@@ -28,7 +28,7 @@
   }
 }
 .footer__text--light {
-  // display: block;
+  text-align: left;
   @media screen and (max-width: 767px) {
     margin-bottom: 43px;
     max-width: 232px;
@@ -38,6 +38,7 @@
   }
 }
 .footer__text--dark {
+  text-align: left;
   display: block;
   margin-bottom: 17px;
 }
@@ -68,8 +69,6 @@
     margin-bottom: 50px;
   }
 }
-// .socials-list__item {
-// }
 .socials-list__link {
   display: flex;
   align-items: center;
