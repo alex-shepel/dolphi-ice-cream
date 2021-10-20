@@ -75,15 +75,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: fill var(--anim-props);
 }
 .socials-list__icon {
-  --color1: var(--bg-very-soft-red-color);
-  --color2: var(--white-color);
-  flex-shrink: 0;
   display: block;
   width: 32px;
   height: 32px;
+  fill: var(--bg-very-soft-red-color);
+  transition: all var(--anim-props);
   @media screen and (min-width: 768px) {
     width: 34px;
     height: 34px;
@@ -91,11 +89,11 @@
 }
 .icon {
   &:hover {
-    --color1: var(--title-color);
+    fill: var(--title-color);
   }
   .socials-list__link:hover &,
   .socials-list__link:focus & {
-    --color1: var(--title-color);
+    fill: var(--title-color);
   }
 }
 .footer-address__text {
