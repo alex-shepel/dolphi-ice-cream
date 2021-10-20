@@ -15,9 +15,11 @@
   function toggleModal() {
       refs.modal.classList.toggle('is-hidden');
       refs.headerBtn.classList.toggle('is-hidden');
+      document.body.classList.toggle('no-scroll');
   }
   function removeModal() {
     refs.modal.classList.add('is-hidden');
     refs.headerBtn.classList.remove('is-hidden');
+    document.body.classList.remove('no-scroll');
 }
 })();
