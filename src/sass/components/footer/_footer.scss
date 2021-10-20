@@ -81,10 +81,13 @@
   width: 32px;
   height: 32px;
   fill: var(--bg-very-soft-red-color);
-  transition: fill var(--anim-props);
+  transition: fill var(--anim-props), transform var(--anim-props);
   @media screen and (min-width: 768px) {
     width: 34px;
     height: 34px;
+  }
+  &:hover {
+    transform: scale3d(1.3, 1.3, 1.3);
   }
 }
 .icon {
