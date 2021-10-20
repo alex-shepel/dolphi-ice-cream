@@ -225,7 +225,7 @@
   }
   &--how:hover,
   &--how:focus {
-    background-color: #ecebeb;
+    background-color: var(--btn-secondary-hover-color);
   }
 }
 
@@ -254,7 +254,7 @@
   background-color: var(--white-color);
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: var(--btn-secondary-hover-color);
   }
   @media screen and (min-width: 1280px) {
     width: 26px;
