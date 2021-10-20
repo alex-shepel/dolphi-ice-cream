@@ -148,7 +148,6 @@ address {
     line-height: 1.154;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .section__label {
     font-size: 30px;
@@ -172,7 +171,6 @@ address {
     line-height: 1.146;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .section__title {
     font-size: 58px;
