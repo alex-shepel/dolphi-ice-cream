@@ -11,13 +11,15 @@
   pointer-events: auto;
   transition: visibility 250ms linear;
   transition: opacity 250ms linear;
+
+  z-index: 200;
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+// .backdrop.is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
 
 .modal {
   width: 450px;
@@ -30,7 +32,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 200;
+  // z-index: 200;
 
   @media screen and (min-width: 1280px) {
     width: 528px;
