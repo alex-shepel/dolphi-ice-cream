@@ -2,14 +2,32 @@
   <div class="modal">
     <button class="modal__btn-close" type="button"></button>
 
-    <form action="#">
+    <form class="modal__form" action="#">
       <p class="modal__title section__title">Create Your Ice-Dream!</p>
-      <label class="modal__lable"><input type="text" name="username" />Your name</label>
-      <label class="modal__lable"><input type="number" name="phone-number" />Your phone</label>
-      <label class="modal__lable"><input type="text" name="e-mail" />Your e-mail</label>
-      <label class="modal__lable"><textarea name="users order"></textarea>Your order</label>
+      <label class="modal__lable"
+        ><input class="modal__input" type="text" name="username" title="Your name" required />Your
+        name</label
+      >
+      <label class="modal__lable"
+        ><input
+          class="modal__input"
+          type="tel"
+          name="user-phone"
+          title="+38-050-111-11-11"
+          required
+        />Your phone</label
+      >
+      <label class="modal__lable"
+        ><input class="modal__input" type="email" name="user-email" required />Your e-mail</label
+      >
+      <label class="modal__lable">
+        <textarea class="modal__checkout" name="user-order"></textarea>Your order</label
+      >
       <input type="checkbox" />
-      <label class="modal__lable">Quam,<a href="">laboriosam quaerat!</a></label>
+      <label class="modal__lable-checkout" name="user-order"
+        >Quam,<a class="modal__link" href="">laboriosam quaerat!</a></label
+      >
+      <button class="modal__btn-submit" type="submit">Send!</button>
     </form>
   </div>
 </div>
