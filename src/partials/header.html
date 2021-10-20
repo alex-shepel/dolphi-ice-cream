@@ -1,34 +1,46 @@
-
 <header class="header">
   <div class="container header__container">
-    <a class="header__logo-link" href="./index.html">
-      <picture class="header__logo">
-        <source srcset="./images/hero/logo.png 1x, ./images/hero/logo@2x.png 2x"/>
-        <img class="header__icon" srcset="./images/hero/logo.png" alt="логотип"
-        src="./images/hero/logo.png" width="199" height="50"/>
-      </picture>
+    <a class="logo link" href="./index.html">
+      <svg class="logo__icon" width="50" height="50">
+        <use href="./images/sprite.svg#icon-logo"></use>
+      </svg>
+      <span class="logo__title">IceCream</span>
     </a>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item list"><a class="nav__link link active" href="./index.html">Home</a></li>
-        <li class="nav__item list"><a class="nav__link link" href="#our-products">Our products</a></li>
-        <li class="nav__item list"><a class="nav__link link" href="#how-its-made">How it’s made?</a></li>
+        <li class="nav__item list">
+          <a class="nav__link link active" href="./index.html">Home</a>
+        </li>
+        <li class="nav__item list">
+          <a class="nav__link link" href="#our-products">Our products</a>
+        </li>
+        <li class="nav__item list">
+          <a class="nav__link link" href="#how-its-made">How it’s made?</a>
+        </li>
         <li class="nav__item list"><a class="nav__link link" href="#about">About us</a></li>
         <li class="nav__item list"><a class="nav__link link" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="header__right">
-      <button class="header__open" data-modal-open
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-      aria-label="Переключатель мобильного меню"
-      type="button">
-        <svg class="btn-modal__icon-burger" width="20" height="12" aria-label="Переключатель мобильного меню">
+      <button
+        class="header__open"
+        data-modal-open
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Переключатель мобильного меню"
+        type="button"
+      >
+        <svg
+          class="btn-modal__icon-burger"
+          width="20"
+          height="12"
+          aria-label="Переключатель мобильного меню"
+        >
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
       </button>
-      <button class="btn btn--secondary header-m__buy header-m__buy--tablet" type="button"> 
-        <span class="header-m__buy-text"> Buy now </span> 
+      <button class="btn btn--secondary header-m__buy header-m__buy--tablet" type="button">
+        <span class="header-m__buy-text"> Buy now </span>
         <svg class="header-m__buy-icn" width="7" height="10">
           <use href="./images/sprite.svg#icon-modal_btn"></use>
         </svg>
@@ -36,20 +48,26 @@
     </div>
   </div>
   <!-- Мобильное меню -->
-  <div class="backdrop is-hidden" data-modal >
+  <div class="backdrop is-hidden" data-modal>
     <div class="header-m" id="mobile-menu">
-      <button class="header-m__close" type="button" data-modal-close
-      aria-controls="mobile-menu"
-      aria-label="Переключатель мобильного меню">
-        <svg class="menu-btn__icon-close"
+      <button
+        class="header-m__close"
+        type="button"
+        data-modal-close
+        aria-controls="mobile-menu"
+        aria-label="Переключатель мобильного меню"
+      >
+        <svg
+          class="menu-btn__icon-close"
           width="14"
           height="14"
-          aria-label="Переключатель мобильного меню">
+          aria-label="Переключатель мобильного меню"
+        >
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      <button class="btn btn--secondary header-m__buy" type="button"> 
-        <span class="header-m__buy-text"> Buy now </span> 
+      <button class="btn btn--secondary header-m__buy" type="button">
+        <span class="header-m__buy-text"> Buy now </span>
         <svg class="header-m__buy-icn" width="7" height="10">
           <use href="./images/sprite.svg#icon-modal_btn"></use>
         </svg>
