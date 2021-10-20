@@ -18,34 +18,64 @@
     }
   }
 
-  &__text {
+  &__info {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding: 43px 60px 26px;
-    font-size: 12px;
-    line-height: 2.583;
     background-color: var(--bg-slider);
 
     @media screen and (min-width: 768px) {
-      padding: 30px 38px 28px;
-      font-size: 14px;
-      line-height: 2.143;
+      margin-bottom: 24px;
+      padding: 47px 80px 34px;
     }
 
     @media screen and (min-width: 1280px) {
-      padding: 32px 52px;
-      font-size: 16px;
-      line-height: 1.875;
+      margin-bottom: 15px;
+      padding: 50px 90px 40px;
     }
 
     &::before {
       content: '';
       position: absolute;
-      top: 15px;
-      left: 28px;
+      top: 24px;
+      left: 50px;
+      z-index: 3;
       width: 54px;
       height: 40px;
       background-image: url(../images/review/quotes.svg);
+
+      @media screen and (min-width: 768px) {
+        top: 30px;
+        left: 38px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        top: 30px;
+        left: 54px;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
+
+    font-size: 12px;
+    line-height: 2.583;
+    background-image: repeating-linear-gradient(
+      to top,
+      var(--line-color) 0px 1px,
+      transparent 1px 31px
+    );
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 2.143;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.875;
     }
   }
 
@@ -103,11 +133,11 @@
 
   @media screen and (min-width: 768px) {
     width: 620px;
-    height: 382px;
+    height: 440px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 926px;
-    height: 350px;
+    height: 400px;
   }
 }
