@@ -267,6 +267,7 @@
   background-color: var(--white-color);
   border-color: transparent;
   border-radius: 50%;
+  cursor: pointer;
   transition: transform var(--anim-props), background-color var(--anim-props);
   &:hover,
   &:focus {
@@ -274,7 +275,7 @@
   }
 }
 .product-list__btn--pink {
-  $bg-hover-color-pink: #fd5fae;
+  $bg-hover-color-pink: #e9519d;
   &:hover,
   &:focus {
     background-color: $bg-hover-color-pink;
