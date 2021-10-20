@@ -267,13 +267,45 @@
   background-color: var(--white-color);
   border-color: transparent;
   border-radius: 50%;
+  cursor: pointer;
+  transition: transform var(--anim-props), background-color var(--anim-props);
   &:hover,
   &:focus {
-    background-color: var(--btn-secondary-hover-color);
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+}
+.product-list__btn--pink {
+  $bg-hover-color-pink: #e9519d;
+  &:hover,
+  &:focus {
+    background-color: $bg-hover-color-pink;
+  }
+}
+.product-list__btn--orange {
+  $bg-hover-color-orange: #f5b253;
+  &:hover,
+  &:focus {
+    background-color: $bg-hover-color-orange;
+  }
+}
+.product-list__btn--green {
+  $bg-hover-color-green: #85c92d;
+  &:hover,
+  &:focus {
+    background-color: $bg-hover-color-green;
   }
 }
 .product-list__icon {
   fill: var(--title-color);
+  transition: fill var(--anim-props);
+  &:hover,
+  &:focus {
+    fill: var(--white-color);
+  }
+  .product-list__btn:hover &,
+  .product-list__btn:focus & {
+    fill: var(--white-color);
+  }
 }
 .scrollbar--pink {
   $scrollbar-track-color-pink: #fa99b1;
