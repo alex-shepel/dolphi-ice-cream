@@ -33,5 +33,8 @@
     <symbol id="icon-btn" fill="none" viewBox="0 0 8 10">
     <path stroke="#D41443" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1.616 1 4.428 4-4.428 4"/>
     </symbol>
+    <symbol id="icon-btn-white" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="m1.616 1 4.428 4-4.428 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
   </defs>
 </svg>
