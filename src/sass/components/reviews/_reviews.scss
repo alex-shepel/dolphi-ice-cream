@@ -1,0 +1,143 @@
+.review-list {
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__info {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 43px 60px 26px;
+    background-color: var(--bg-slider);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 24px;
+      padding: 47px 80px 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+      padding: 50px 90px 40px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 50px;
+      z-index: 3;
+      width: 54px;
+      height: 40px;
+      background-image: url(../images/review/quotes.svg);
+
+      @media screen and (min-width: 768px) {
+        top: 30px;
+        left: 38px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        top: 30px;
+        left: 54px;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
+
+    font-size: 12px;
+    line-height: 2.583;
+    background-image: repeating-linear-gradient(
+      to top,
+      var(--line-color) 0px 1px,
+      transparent 1px 31px
+    );
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 2.143;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.875;
+    }
+  }
+
+  &__dot {
+    position: relative;
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin-bottom: 15px;
+    background-color: var(--btn-primary-hover-color);
+    border-radius: 50%;
+
+    &::before,
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: var(--btn-primary-hover-color);
+      border-radius: 50%;
+    }
+
+    &::before {
+      position: absolute;
+      left: -10px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 10px;
+    }
+  }
+
+  &__person {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.857;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 1.875;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+      line-height: 1.85;
+    }
+  }
+}
+
+.review-slider {
+  width: 280px;
+  height: 600px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    height: 440px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    height: 400px;
+  }
+}
