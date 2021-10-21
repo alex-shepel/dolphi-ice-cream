@@ -45,6 +45,51 @@ function logBackdropClick() {
   console.log('Это клик в бекдроп');
 }
 
+// Page Animation
+
+ScrollReveal().reveal('.about', {
+  delay: 500,
+  opacity: 0,
+  duration: 2000,
+});
+ScrollReveal().reveal('.products', {
+  delay: 50,
+  rotate: {
+    x: 180,
+    y: 0,
+    z: 0,
+  },
+  duration: 1600,
+  viewOffset: {
+    top: 0,
+    right: 0,
+    bottom: 500,
+    left: 0,
+  },
+  easing: 'cubic-bezier(.17,.67,.89,.32)',
+});
+ScrollReveal().reveal('.advantages__section', {
+  delay: 500,
+  opacity: 0,
+  duration: 2000,
+});
+ScrollReveal().reveal('.pictures', {
+  delay: 500,
+  rotate: {
+    x: 90,
+    y: 70,
+    z: 50,
+  },
+  duration: 1600,
+  easing: 'cubic-bezier(0,0,0,0)',
+});
+ScrollReveal().reveal('.section-review', { delay: 50 });
+ScrollReveal().reveal('.section-contacts', {
+  delay: 50,
+  duration: 2000,
+  scale: 0.1,
+});
+
 // Scroll Button
 
 var scrollToTopBtn = document.querySelector('.scrollToTopBtn');
