@@ -173,8 +173,9 @@
   }
 
   &__icon {
-    margin-left: 15px;
-    width: 5px;
+    stroke: var(--title-color);
+    margin-left: 16px;
+    width: 7px;
     height: 10px;
   }
 }
