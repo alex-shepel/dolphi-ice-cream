@@ -145,6 +145,7 @@
     height: 100vh;
     background-color: #eeeeee;
     z-index: 999;
+    overflow-y: scroll;
   }
 
   &__modal-close {
