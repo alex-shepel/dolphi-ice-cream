@@ -210,7 +210,7 @@
   height: 6px;
   background-color: var(--white-color);
   border-radius: 50%;
-  margin-bottom: 30px;
+
   &::before {
     content: '';
 
@@ -230,6 +230,9 @@
     background-color: var(--white-color);
     border-radius: 50%;
   }
+}
+.product-list__circle {
+  margin-bottom: 30px;
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
   }

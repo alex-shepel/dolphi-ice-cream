@@ -77,23 +77,25 @@
     ),
     url('../images/products/del-milkshakes-index.jpg');
   background-position: 50% 50%;
-  background-repeat: no-rep eat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .btn-product__close {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  padding: 5px 20px;
   position: relative;
+  display: block;
+  padding: 10px 25px;
   margin-left: auto;
   margin-bottom: 10px;
   width: 95px;
-  display: block;
   text-decoration: none;
   border: transparent;
   background-color: inherit;
+  font-family: Titan One, cursive;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  text-transform: uppercase;
   &:before {
     content: '';
     position: absolute;
@@ -116,9 +118,15 @@
   }
 }
 .modal-products__title {
-  margin-bottom: 20px;
   text-indent: 15px;
+  font-family: Titan One, cursive;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .modal-products__text {
   text-indent: 15px;
+}
+.modal-products__circle {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
