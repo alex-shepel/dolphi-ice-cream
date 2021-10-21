@@ -1,0 +1,172 @@
+.backdrop-products {
+  $bg-backdrop-products: #f9fae3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba($color: $bg-backdrop-products, $alpha: 0.5);
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+  }
+}
+.backdrop-products--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-products {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 24px;
+  overflow: auto;
+  @media screen and (max-width: 479px) {
+    width: calc(100% - 2 * 20px);
+    height: calc(100% - 2 * 20px);
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    height: calc(100% - 2 * 50px);
+  }
+  @media screen and (min-width: 768px) {
+    width: 600px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 700px;
+  }
+}
+.modal-products--pink {
+  background-image: linear-gradient(
+      45deg,
+      rgba(245, 135, 246, 0.5) 0%,
+      rgba(238, 201, 240, 0.5) 19%,
+      rgba(241, 211, 235, 0.5) 29%,
+      rgba(238, 164, 215, 0.5) 59%,
+      rgba(238, 201, 240, 0.5) 78%,
+      rgba(245, 135, 246, 0.5) 100%
+    ),
+    url('../images/products/icecream-bg-modal-pink.jpg');
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-products--orange {
+  background-image: linear-gradient(
+      70deg,
+      rgba(241, 211, 235, 0.4),
+      rgba(188, 187, 243, 0.4),
+      rgba(238, 201, 240, 0.4),
+      rgba(238, 201, 240, 0.4),
+      rgba(238, 201, 240, 0.4),
+      rgba(204, 202, 243, 0.4),
+      rgba(251, 199, 212, 0.4)
+    ),
+    url('../images/products/easy-thai-iced-coffee.jpg');
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-products--green {
+  background-image: linear-gradient(
+      160deg,
+      rgba(173, 86, 173, 0.6),
+      rgba(197, 157, 111, 0.6),
+      rgba(243, 216, 201, 0.4),
+      rgba(234, 216, 253, 0.4),
+      rgba(253, 192, 235, 0.3),
+      rgba(241, 238, 200, 0.4),
+      rgba(243, 216, 201, 0.4),
+      rgba(222, 181, 247, 0.4),
+      rgba(195, 189, 253, 0.4)
+    ),
+    url('../images/products/unnamed.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: 768px) {
+    background-position: 20% 20%;
+  }
+  @media screen and (min-width: 1280px) {
+    background-position: 0 0;
+  }
+}
+
+.btn-products__close {
+  $bg-btn-products: #6d0c2e;
+  position: fixed;
+  top: 15px;
+  right: 0;
+  display: block;
+  padding: 10px 20px;
+  margin-left: auto;
+  width: 95px;
+  text-decoration: none;
+  border: transparent;
+  background-color: inherit;
+  font-family: Titan One, cursive;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  text-transform: uppercase;
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid $bg-btn-products;
+    border-right: 20px solid transparent;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid var(--title-color);
+    border-right: 20px solid transparent;
+  }
+  &:hover,
+  &:focus {
+    color: $bg-btn-products;
+  }
+}
+.modal-products__title {
+  text-indent: 15px;
+}
+.modal-products__text {
+  text-indent: 15px;
+}
+.modal-products__circle {
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.scrollbar-modal {
+  $scrollbar-track-color-pink: #c1cafa;
+  $scrollbar-bg-color-pink: #dc9ee9;
+  $scrollbar-color-pink: #db7ae4;
+  &::-webkit-scrollbar {
+    margin-right: 10px;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $scrollbar-track-color-pink;
+    border-radius: 50%;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $scrollbar-bg-color-pink;
+    border-radius: 50%;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: $scrollbar-color-pink;
+  }
+}

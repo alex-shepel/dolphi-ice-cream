@@ -1,3 +1,5 @@
+@import './modal-products.scss';
+
 .products {
   text-align: center;
   padding-top: 121px;
@@ -194,8 +196,6 @@
   }
 }
 .circle--white {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,7 +204,7 @@
   height: 6px;
   background-color: var(--white-color);
   border-radius: 50%;
-  margin-bottom: 30px;
+
   &::before {
     content: '';
 
@@ -224,6 +224,11 @@
     background-color: var(--white-color);
     border-radius: 50%;
   }
+}
+.product-list__circle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
   }
