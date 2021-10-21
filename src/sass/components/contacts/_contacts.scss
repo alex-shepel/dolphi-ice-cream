@@ -173,9 +173,13 @@
   }
 
   &__icon {
-    stroke: var(--title-color);
+    stroke: #fff;
     margin-left: 16px;
     width: 7px;
     height: 10px;
+
+    &--accent {
+      stroke: var(--title-color);
+    }
   }
 }
