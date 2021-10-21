@@ -49,13 +49,17 @@ address {
 }
 
 .btn {
+  padding: 10px 25px;
+
+  text-align: center;
   font-size: 14px;
   line-height: calc(18 / 14);
-  padding: 10px 25px;
+
   border-style: none;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color var(--anim-props), transform var(--anim-props);
+
   &--primary {
     background-color: var(--title-color);
     color: var(--white-color);
