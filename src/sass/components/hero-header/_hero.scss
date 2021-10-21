@@ -72,7 +72,7 @@
     display: none;
     @media screen and (min-width: 768px) {
       display: flex;
-      flex-direction: row;
+      align-items: center;
     }
     @media screen and (min-width: 1280px) {
       gap: 30px;
@@ -81,12 +81,9 @@
   &__left-button-text {
     display: flex;
     flex-direction: column;
-    padding-top: 47px;
-    padding-bottom: 6px;
+    padding-top: 30px;
     gap: 7px;
     @media screen and (min-width: 1280px) {
-      padding-top: 56px;
-      padding-bottom: 11px;
       gap: 20px;
     }
   }
@@ -180,7 +177,7 @@
     z-index: 6;
     @media screen and (min-width: 768px) {
       right: 235px;
-      top: 74px;
+      top: 64px;
     }
     @media screen and (min-width: 1280px) {
       right: 335px;
