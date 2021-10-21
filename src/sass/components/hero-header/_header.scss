@@ -41,6 +41,7 @@
 
 .btn-modal__icon-burger {
   stroke: var(--title-color);
+  transition: stroke var(--anim-props), transform var(--anim-props);
 }
 
 // Мобильное меню
@@ -82,6 +83,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: stroke var(--anim-props), transform var(--anim-props);
   &:hover .menu-btn__icon-close {
     stroke: var(--primary-text-color);
   }
@@ -101,8 +103,10 @@
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 32px;
+  transition: background-color var(--anim-props), transform var(--anim-props);
   &:hover {
     background-color: var(--btn-secondary-hover-color);
+    transform: scale3d(1.1, 1.1, 1.1);
   }
   &--tablet {
     display: none;

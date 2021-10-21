@@ -1,10 +1,29 @@
+html {
+  scroll-behavior: smooth;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.875;
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.pseudo-heading {
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 h1,
@@ -19,7 +38,6 @@ p {
 
 img {
   display: block;
-  // max-width: 100%;
   width: 100%;
   height: auto;
 }
@@ -39,14 +57,17 @@ address {
 }
 
 .btn {
-  font-family: 'DM Sans', sans-serif;
+  padding: 10px 25px;
+
+  text-align: center;
   font-size: 14px;
   line-height: calc(18 / 14);
-  padding: 10px 25px;
+
   border-style: none;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color var(--anim-props), transform var(--anim-props);
+
   &--primary {
     background-color: var(--title-color);
     color: var(--white-color);

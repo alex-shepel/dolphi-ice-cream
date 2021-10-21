@@ -6,6 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -30px;
+  z-index: 0;
 
   @media screen and (min-width: 480px) {
     width: 400px;
@@ -172,8 +173,13 @@
   }
 
   &__icon {
-    margin-left: 15px;
-    width: 5px;
+    stroke: #fff;
+    margin-left: 16px;
+    width: 7px;
     height: 10px;
+
+    &--accent {
+      stroke: var(--title-color);
+    }
   }
 }
