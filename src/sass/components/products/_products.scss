@@ -200,6 +200,7 @@
 .product-list__title--big {
   transition: transform var(--anim-props);
   &:hover {
+    cursor: default;
     transform: scale3d(1.3, 1.3, 1.3);
   }
 }
