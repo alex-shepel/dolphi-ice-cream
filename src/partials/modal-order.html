@@ -1,33 +1,66 @@
 <div class="backdrop">
   <div class="modal">
-    <button class="modal__btn-close" type="button"></button>
+    <button class="modal__btn-close" type="button">
+      <svg class="modal__btn-close-icon" width="18px" height="18px">
+        <use href="./images/sprite.svg#icon-modal_btn"></use>
+      </svg>
+    </button>
 
     <form class="modal__form" action="#">
       <p class="modal__title section__title">Create Your Ice-Dream!</p>
-      <label class="modal__lable"
-        ><input class="modal__input" type="text" name="username" title="Your name" required />Your
-        name</label
+      <label class="modal__lable">
+        <span class="modal-container">
+          <input class="modal__input" type="text" name="username" title="Your name" required /><svg
+            class="modal__icon"
+            width="18px"
+            height="18px"
+          >
+            <use href="./images/sprite.svg#icon-person"></use>
+          </svg>
+        </span>
+        Your name</label
       >
       <label class="modal__lable"
-        ><input
-          class="modal__input"
-          type="tel"
-          name="user-phone"
-          title="+38-050-111-11-11"
-          required
-        />Your phone</label
+        ><span class="modal-container">
+          <input
+            class="modal__input"
+            type="tel"
+            name="user-phone"
+            title="+38-050-111-11-11"
+            required
+          /><svg class="modal__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-phone"></use>
+          </svg>
+        </span>
+        Your phone</label
       >
       <label class="modal__lable"
-        ><input class="modal__input" type="email" name="user-email" required />Your e-mail</label
+        ><span class="modal-container">
+          <input class="modal__input" type="email" name="user-email" required /><svg
+            class="modal__icon"
+            width="18px"
+            height="18px"
+          >
+            <use href="./images/sprite.svg#icon-mailing"></use>
+          </svg>
+        </span>
+        Your e-mail</label
       >
       <label class="modal__lable">
-        <textarea class="modal__checkout" name="user-order"></textarea>Your order</label
+        <textarea
+          class="modal__textarea"
+          name="user-order"
+          placeholder="Create Your Ice-Dream!"
+        ></textarea
+        >Your order</label
       >
-      <input type="checkbox" />
-      <label class="modal__lable-checkout" name="user-order"
-        >Quam,<a class="modal__link" href="">laboriosam quaerat!</a></label
+
+      <input class="checkbox visually-hidden" type="checkbox" id="accept-policy" />
+      <label class="modal__lable-checkbox checkbox-container" name="userorder" for="accept-policy">
+        Quam &nbsp <a class="modal__link" href="">laboriosam quaerat!</a></label
       >
-      <button class="modal__btn-submit" type="submit">Send!</button>
+
+      <button class="modal__btn-submit btn--primary" type="submit">Send!</button>
     </form>
   </div>
 </div>
