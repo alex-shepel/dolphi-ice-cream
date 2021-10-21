@@ -106,14 +106,14 @@
   }
   &__right-item {
     position: relative;
-    width: 58px;
+    min-width: 60px;
     height: 45px;
     transition: transform var(--anim-props), transform var(--anim-props);
     &:hover {
       transform: scale3d(1.3, 1.3, 1.3);
     }
     @media screen and (min-width: 1280px) {
-      width: 99px;
+      min-width: 110px;
       height: 77px;
     }
   }
