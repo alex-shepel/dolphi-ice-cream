@@ -176,11 +176,11 @@
   &__ice-cream-pic {
     position: absolute;
     right: 32px;
-    top: 92px;
+    top: 90px;
     z-index: 6;
     @media screen and (min-width: 768px) {
       right: 235px;
-      top: 64px;
+      top: 74px;
     }
     @media screen and (min-width: 1280px) {
       right: 335px;
@@ -190,7 +190,7 @@
 }
 .hero__btn {
   font-size: 8px;
-  line-height: calc (10 / 8);
+  line-height: calc(10 / 8);
   padding: 7px 14px;
   display: flex;
   align-items: center;
