@@ -1,4 +1,5 @@
 @import './modal-products.scss';
+
 .products {
   text-align: center;
   padding-top: 121px;
@@ -200,8 +201,6 @@
   }
 }
 .circle--white {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,6 +231,8 @@
   }
 }
 .product-list__circle {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
