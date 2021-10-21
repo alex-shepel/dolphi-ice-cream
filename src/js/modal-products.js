@@ -26,6 +26,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('backdrop-products--is-hidden');
+    document.body.classList.toggle('no-scroll');
   }
 })();
 (() => {
@@ -40,5 +41,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('backdrop-products--is-hidden');
+    document.body.classList.toggle('no-scroll');
   }
 })();
