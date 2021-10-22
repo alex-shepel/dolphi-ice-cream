@@ -1,3 +1,69 @@
-<div class="backdrop">
-  <form>Форма заказа</form>
+<div class="backdrop-buy backdrop-buy--is-hidden" data-modal-buy>
+  <div class="modal-buy">
+    <button class="modal-buy__btn-close" type="button" data-modal-buy-close>
+      <svg class="modal-buy__btn-close-icon" width="18px" height="18px">
+        <use href="./images/sprite.svg#icon-modal_btn"></use>
+      </svg>
+    </button>
+
+    <form class="modal-buy__form" action="#">
+      <p class="modal-buy__title section__title">Create Your Ice-Dream!</p>
+      <label class="modal-buy__lable">
+        <span class="modal-buy-container">
+          <input
+            class="modal-buy__input"
+            type="text"
+            name="username"
+            title="Your name"
+            required
+          /><svg class="modal-buy__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-person"></use>
+          </svg>
+        </span>
+        Your name</label
+      >
+      <label class="modal-buy__lable"
+        ><span class="modal-buy-container">
+          <input
+            class="modal-buy__input"
+            type="tel"
+            name="user-phone"
+            title="+38-050-111-11-11"
+            required
+          /><svg class="modal-buy__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-phone"></use>
+          </svg>
+        </span>
+        Your phone</label
+      >
+      <label class="modal-buy__lable"
+        ><span class="modal-buy-container">
+          <input class="modal-buy__input" type="email" name="user-email" required />
+          <svg class="modal-buy__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-mailing"></use>
+          </svg>
+        </span>
+        Your e-mail</label
+      >
+      <label class="modal-buy__lable">
+        <textarea
+          class="modal-buy__textarea"
+          name="user-order"
+          placeholder="Create Your Ice-Dream!"
+        ></textarea
+        >Your order</label
+      >
+
+      <input class="checkbox visually-hidden" type="checkbox" id="accept-policy" />
+      <label
+        class="modal-buy__lable-checkbox checkbox-container"
+        name="userorder"
+        for="accept-policy"
+      >
+        Quam &nbsp <a class="modal-buy__link" href="">laboriosam quaerat!</a></label
+      >
+
+      <button class="modal-buy__btn-submit btn--primary" type="submit">Send!</button>
+    </form>
+  </div>
 </div>
