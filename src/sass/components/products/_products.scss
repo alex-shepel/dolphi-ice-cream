@@ -1,3 +1,5 @@
+@import './modal-products.scss';
+
 .products {
   text-align: center;
   padding-top: 121px;
@@ -33,14 +35,15 @@
   }
 }
 .product-list__item {
+  position: relative;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
   display: block;
   border-radius: 24px;
-  text-align: center;
   padding-top: 161px;
   padding-bottom: 41px;
+  text-align: center;
+  box-shadow: 0px 8px 20px rgba(255, 63, 111, 0.2);
   @media screen and (max-width: 767px) {
     max-width: 350px;
     &:not(:last-child) {
@@ -184,23 +187,24 @@
   }
 }
 .product-list__title {
-  font-family: Titan One;
   font-size: 20px;
-  font-weight: 400;
   line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 30px;
+
   @media screen and (min-width: 1280px) {
     font-size: 30px;
-    line-height: 1.13;
     margin-bottom: 32px;
   }
 }
+.product-list__title--big {
+  transition: transform var(--anim-props);
+  &:hover {
+    cursor: default;
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+}
 .circle--white {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,7 +213,7 @@
   height: 6px;
   background-color: var(--white-color);
   border-radius: 50%;
-  margin-bottom: 30px;
+
   &::before {
     content: '';
 
@@ -229,6 +233,11 @@
     background-color: var(--white-color);
     border-radius: 50%;
   }
+}
+.product-list__circle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
   }
@@ -240,7 +249,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
-  letter-spacing: 0.04em;
   margin-bottom: 30px;
 
   color: var(--white-color);
@@ -267,13 +275,45 @@
   background-color: var(--white-color);
   border-color: transparent;
   border-radius: 50%;
+  cursor: pointer;
+  transition: transform var(--anim-props), background-color var(--anim-props);
   &:hover,
   &:focus {
-    background-color: var(--btn-secondary-hover-color);
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+}
+.product-list__btn--pink {
+  $bg-hover-color-pink: #e9519d;
+  &:hover,
+  &:focus {
+    background-color: $bg-hover-color-pink;
+  }
+}
+.product-list__btn--orange {
+  $bg-hover-color-orange: #f5b253;
+  &:hover,
+  &:focus {
+    background-color: $bg-hover-color-orange;
+  }
+}
+.product-list__btn--green {
+  $bg-hover-color-green: #85c92d;
+  &:hover,
+  &:focus {
+    background-color: $bg-hover-color-green;
   }
 }
 .product-list__icon {
   fill: var(--title-color);
+  transition: fill var(--anim-props);
+  &:hover,
+  &:focus {
+    fill: var(--white-color);
+  }
+  .product-list__btn:hover &,
+  .product-list__btn:focus & {
+    fill: var(--white-color);
+  }
 }
 .scrollbar--pink {
   $scrollbar-track-color-pink: #fa99b1;

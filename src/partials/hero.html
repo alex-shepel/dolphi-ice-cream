@@ -1,80 +1,108 @@
 <section class="hero">
-    <div class="container hero__container">
-      <div class="hero__left">
-        <div class="hero__title-btn">
-          <h1 class="hero__title"> ice cream <br> 
-            made with  <br> 
-            <span class="hero__title-accent">passion</span></h1>
-          <div class="hero__btn-group">
-            <button class="btn hero__btn hero__btn--prod" type="button">Products</button>
-            <button class=" btn hero__btn hero__btn--how" type="button">How it’s made?</button>
-          </div>
-        </div>
-        <div class="hero__left-button">
-          <picture class="hero__milk"> 
-            <source 
-              srcset="./images/hero/milk_desktop.png 1x, 
-                      ./images/hero/milk_desktop@2x.png 2x" 
-              media="(min-width:1280px)"/> 
-            <source 
-              srcset="./images/hero/milk_tablet.png 1x, 
-                      ./images/hero/milk_tablet@2x.png 2x" 
-              media="(min-width:768px)"/>
-            <img class="hero__milk_img" alt="jar of milk"
-            src="./images/hero/milk_tablet.png"/>
-          </picture>
-          <div class="hero__left-button-text">
-            <p class="hero-textmilk">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            </p>
-            <button class="hero-btn-milk" type="button">
-              <svg class="hero-milk-icn" width="8" height="8">
-                <use href="./images/sprite.svg#icon-arrow-right"></use>
-              </svg>
-            </button>
-          </div>
+  <div class="container hero__container">
+    <div class="hero__left">
+      <div class="hero__title-btn">
+        <h1 class="hero__title animate__animated animate__backInLeft">
+          ice cream <br />
+          made with <br />
+          <span class="hero__title-accent">passion</span>
+        </h1>
+        <div class="hero__btn-group">
+          <a class="btn hero__btn hero__btn--prod" href="#our-products">Products</a>
+          <a class="btn hero__btn hero__btn--how" href="#how-its-made">How it’s made?</a>
         </div>
       </div>
-      <ul class="hero__right-list">
-        <li class="hero__right-item list">
-          <span class="hero__right-circle"> </span>
-          <p class="hero__right-number">16</p>
-          <p class="hero__right-text">cafes</p>
-        </li>
-        <li class="hero__right-item list">
-          <span class="hero__right-circle"> </span>
-          <p class="hero__right-number">23</p>
-          <p class="hero__right-text">food trucks</p>
-        </li>
-      </ul>
-      <picture class="hero__bg-circle"> 
-        <source 
-          srcset="./images/hero/circle_desktop.png 1x, 
-                  ./images/hero/circle_desktop@2x.png 2x" 
-          media="(min-width:1280px)"/> 
-        <source 
-          srcset="./images/hero/circle_tablet.png 1x, 
-                  ./images/hero/circle_tablet@2x.png 2x" 
-          media="(min-width:768px)"/> 
-        <source 
-          srcset="./images/hero/circle_phone.png 1x, 
-                  ./images/hero/circle_phone@2x.png 2x" 
-          media="(max-width:767px)"/> 
-        <img class="hero__circle_img" alt="розовый круглый фон"
-        src="./images/hero/circle_phone.png"/>
-      </picture>
-      <picture class="hero__ice-cream-pic">
-        <source srcset="./images/hero/ice-cream_desktop.png 1x, ./images/hero/ice-cream_desktop@2x.png 2x" media="(min-width:1280px)"/> 
-        <source srcset="./images/hero/ice-cream_tablet.png 1x, ./images/hero/ice-cream_tablet@2x.png 2x" media="(min-width:768px)"/> 
-        <source srcset="./images/hero/ice-cream_phone.png 1x, ./images/hero/ice-cream_phone@2x.png 2x" media="(max-width:767px)"/> 
-        <img class="hero__ice-cream-img" srcset="./images/hero/ice-cream_phone.png" alt="эскимо"
-        src="./images/hero/ice-cream_phone.png"/>
-      </picture>
-      <picture class="hero__tasty-pic">
-        <source srcset="./images/hero/tasty_desktop.png 1x, ./images/hero/tasty_desktop@2x.png 2x" media="(min-width:1280px)"/> 
-        <source srcset="./images/hero/tasty_tablet.png 1x, ./images/hero/tasty_tablet@2x.png 2x" media="(min-width:768px)"/> 
-        <img class="hero__tasty-img" srcset="./images/hero/tasty_tablet.png" alt="эскимо"
-        src="./images/hero/tasty_tablet.png" />
-      </picture>
+      <div class="hero__left-button">
+        <picture class="hero__milk">
+          <source
+            srcset="./images/hero/milk_desktop.png 1x, ./images/hero/milk_desktop@2x.png 2x"
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="./images/hero/milk_tablet.png 1x, ./images/hero/milk_tablet@2x.png 2x"
+            media="(min-width:768px)"
+          />
+          <img class="hero__milk_img" alt="jar of milk" src="./images/hero/milk_tablet.png" />
+        </picture>
+        <div class="hero__left-button-text">
+          <p class="hero-textmilk">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="hero-btn-milk" type="button">
+            <svg class="hero-milk-icn" width="8" height="8">
+              <use href="./images/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
-  </section>
+    <ul class="hero__right-list">
+      <li class="hero__right-item list">
+        <span class="hero__right-circle"> </span>
+        <p class="hero__right-number pseudo-heading">16</p>
+        <p class="hero__right-text">cafes</p>
+      </li>
+      <li class="hero__right-item list">
+        <span class="hero__right-circle"> </span>
+        <p class="hero__right-number pseudo-heading">23</p>
+        <p class="hero__right-text">food trucks</p>
+      </li>
+    </ul>
+    <picture class="hero__bg-circle animate__animated animate__shakeX">
+      <source
+        srcset="./images/hero/circle_desktop.png 1x, ./images/hero/circle_desktop@2x.png 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="./images/hero/circle_tablet.png 1x, ./images/hero/circle_tablet@2x.png 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="./images/hero/circle_phone.png 1x, ./images/hero/circle_phone@2x.png 2x"
+        media="(max-width:767px)"
+      />
+      <img
+        class="hero__circle_img"
+        alt="розовый круглый фон"
+        src="./images/hero/circle_phone.png"
+      />
+    </picture>
+    <picture class="hero__ice-cream-pic animate__animated animate__shakeX">
+      <source
+        srcset="./images/hero/ice-cream_desktop.png 1x, ./images/hero/ice-cream_desktop@2x.png 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="./images/hero/ice-cream_tablet.png 1x, ./images/hero/ice-cream_tablet@2x.png 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="./images/hero/ice-cream_phone.png 1x, ./images/hero/ice-cream_phone@2x.png 2x"
+        media="(max-width:767px)"
+      />
+      <img
+        class="hero__ice-cream-img"
+        srcset="./images/hero/ice-cream_phone.png"
+        alt="эскимо"
+        src="./images/hero/ice-cream_phone.png"
+      />
+    </picture>
+    <picture class="hero__tasty-pic animate__animated animate__fadeInUpBig">
+      <source
+        srcset="./images/hero/tasty_desktop.png 1x, ./images/hero/tasty_desktop@2x.png 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="./images/hero/tasty_tablet.png 1x, ./images/hero/tasty_tablet@2x.png 2x"
+        media="(min-width:768px)"
+      />
+      <img
+        class="hero__tasty-img"
+        srcset="./images/hero/tasty_tablet.png"
+        alt="эскимо"
+        src="./images/hero/tasty_tablet.png"
+      />
+    </picture>
+  </div>
+</section>

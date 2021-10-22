@@ -1,3 +1,5 @@
+@import './logo';
+
 .header {
   position: absolute;
   width: 100%;
@@ -10,10 +12,6 @@
     @media screen and (min-width: 768px) {
       padding-top: 35px;
     }
-  }
-  &__logo-link {
-    display: flex;
-    align-items: center;
   }
   &__open {
     display: flex;
@@ -43,6 +41,7 @@
 
 .btn-modal__icon-burger {
   stroke: var(--title-color);
+  transition: stroke var(--anim-props), transform var(--anim-props);
 }
 
 // Мобильное меню
@@ -65,7 +64,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #e17992;
+  background-color: var(--bg-modal);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 24px 20px;
@@ -84,6 +83,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: stroke var(--anim-props), transform var(--anim-props);
   &:hover .menu-btn__icon-close {
     stroke: var(--primary-text-color);
   }
@@ -103,8 +103,10 @@
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 32px;
+  transition: background-color var(--anim-props), transform var(--anim-props);
   &:hover {
-    background-color: #ecebeb;
+    background-color: var(--btn-secondary-hover-color);
+    transform: scale3d(1.1, 1.1, 1.1);
   }
   &--tablet {
     display: none;
@@ -147,7 +149,7 @@
     left: -20px;
     width: calc(100% + 40px);
     height: 1px;
-    background-color: #e18298;
+    background-color: var(--bg-modal-line);
   }
 }
 .header-m__item:last-child::after {
@@ -158,7 +160,7 @@
   left: -20px;
   width: 250px;
   height: 1px;
-  background-color: #e18298;
+  background-color: var(--bg-modal-line);
 }
 .header-m__item > .link {
   color: var(--white-color);

@@ -6,6 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -30px;
+  z-index: 0;
 
   @media screen and (min-width: 480px) {
     width: 400px;
@@ -132,7 +133,7 @@
   margin: 0 auto;
 
   @media screen and (max-width: 767px) {
-    width: 162px;
+    width: 200px;
   }
 
   @media screen and (min-width: 768px) {
@@ -154,12 +155,31 @@
   }
 
   &__btn {
+    display: block;
     width: 100%;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    min-height: 44px;
+
+    font-size: 16px;
+    line-height: 1.313;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      transform: scale3d(1.05, 1.1, 1.1);
+    }
   }
 
   &__icon {
-    margin-left: 15px;
-    width: 5px;
+    stroke: #fff;
+    margin-left: 16px;
+    width: 7px;
     height: 10px;
+
+    &--accent {
+      stroke: var(--title-color);
+    }
   }
 }
