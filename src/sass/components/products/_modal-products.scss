@@ -137,12 +137,11 @@
     color: $bg-btn-products;
   }
 }
-.modal-products__title {
-  text-indent: 15px;
-}
+.modal-products__title,
 .modal-products__text {
-  line-height: 1.52;
   text-indent: 15px;
+  line-height: 1.52;
+
   @media screen and(min-width:768px) {
     line-height: 1.76;
   }
