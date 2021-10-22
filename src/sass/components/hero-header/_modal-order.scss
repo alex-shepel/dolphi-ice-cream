@@ -1,4 +1,4 @@
-.backdrop {
+.backdrop-buy {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -7,7 +7,7 @@
   left: 0;
 
   visibility: visible;
-  opacity: 1;
+
   pointer-events: auto;
   transition: visibility 250ms linear;
   transition: opacity 250ms linear;
@@ -15,13 +15,13 @@
   z-index: 200;
 }
 
-.backdrop.is-hidden {
+.backdrop-buy--is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
-.modal {
+.modal-buy {
   width: 450px;
   min-height: 609px;
   padding: 40px;
@@ -39,7 +39,7 @@
   }
 }
 
-.modal__btn-close {
+.modal-buy__btn-close {
   display: block;
   width: 30px;
   height: 30px;
@@ -60,7 +60,7 @@
     }
   }
 
-  .modal__btn-close-icon {
+  .modal-buy__btn-close-icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -70,22 +70,22 @@
   }
 }
 
-.modal-container {
+.modal-buy-container {
   display: block;
   position: relative;
 }
 
-.modal__form {
+.modal-buy__form {
   display: flex;
   flex-direction: column;
 }
 
-.modal__title {
+.modal-buy__title {
   font-size: 22px;
   margin-bottom: 20px;
 }
 
-.modal__input {
+.modal-buy__input {
   width: 100%;
   height: 40px;
   border: 1px solid var(--secondary-text-color);
@@ -102,7 +102,7 @@
   }
 }
 
-.modal__icon {
+.modal-buy__icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -110,12 +110,12 @@
   fill: var(--secondary-text-color);
 }
 
-.modal__lable {
+.modal-buy__lable {
   margin-bottom: 20px;
   color: var(--secondary-text-color);
 }
 
-.modal__textarea {
+.modal-buy__textarea {
   width: 100%;
   height: 120px;
   resize: none;
@@ -140,11 +140,11 @@
   margin-bottom: 15px;
 }
 
-.modal__lable-checkbox {
+.modal-buy__lable-checkbox {
   cursor: pointer;
 }
 
-.modal__lable-checkbox::before {
+.modal-buy__lable-checkbox::before {
   content: '';
   display: block;
   width: 16px;
@@ -156,15 +156,15 @@
   margin-right: 15px;
 }
 
-.checkbox:checked + .modal__lable-checkbox::before {
+.checkbox:checked + .modal-buy__lable-checkbox::before {
   box-shadow: inset 0px 0px 0px 5px var(--title-color);
 }
 
-.checkbox:focus + .modal__lable-checkbox::before {
+.checkbox:focus + .modal-buy__lable-checkbox::before {
   outline: 1px solid var(--secondary-text-color);
 }
 
-.modal__btn-submit {
+.modal-buy__btn-submit {
   height: 35px;
   text-align: center;
   letter-spacing: 0.08em;
