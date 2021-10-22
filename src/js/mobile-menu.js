@@ -50,7 +50,7 @@ function logBackdropClick() {
 ScrollReveal().reveal('.about', {
   delay: 500,
   opacity: 0,
-  duration: 2000,
+  duration: 1500,
 });
 ScrollReveal().reveal('.products', {
   delay: 50,
@@ -59,7 +59,7 @@ ScrollReveal().reveal('.products', {
     y: 0,
     z: 0,
   },
-  duration: 1600,
+  duration: 1000,
   viewOffset: {
     top: 0,
     right: 0,
@@ -71,7 +71,7 @@ ScrollReveal().reveal('.products', {
 ScrollReveal().reveal('.advantages__section', {
   delay: 500,
   opacity: 0,
-  duration: 2000,
+  duration: 1500,
 });
 ScrollReveal().reveal('.pictures', {
   delay: 500,
@@ -80,13 +80,13 @@ ScrollReveal().reveal('.pictures', {
     y: 70,
     z: 50,
   },
-  duration: 1600,
+  duration: 1000,
   easing: 'cubic-bezier(0,0,0,0)',
 });
 ScrollReveal().reveal('.section-review', { delay: 50 });
 ScrollReveal().reveal('.section-contacts', {
   delay: 50,
-  duration: 2000,
+  duration: 1500,
   scale: 0.1,
 });
 
